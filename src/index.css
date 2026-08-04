@@ -1,0 +1,75 @@
+/* ============================================================================
+   TEMA VISUAL -- Idiomas & Tecnologia
+   ============================================================================
+   Cores extraídas directamente do logotipo oficial da marca (azul-marinho
+   profundo + azul vívido + branco). Para AJUSTAR AS CORES no futuro, basta
+   editar os valores hexadecimais abaixo -- todas as classes Tailwind que os
+   usam (bg-marca-tinta-900, text-marca-azul-500, etc.) actualizam-se em
+   todo o site automaticamente.
+   ========================================================================= */
+
+@import "tailwindcss";
+
+@theme {
+  /* Azul-marinho profundo (do fundo do logotipo) -- cabecalho, rodape, Hero */
+  --color-marca-tinta-950: #04102A;
+  --color-marca-tinta-900: #071A3D;
+  --color-marca-tinta-800: #0C2554;
+  --color-marca-tinta-700: #12336E;
+
+  /* Azul vivido (do globo/icones do logotipo) -- botoes de acção, links,   */
+  /* elementos interactivos e de destaque em toda a interface.             */
+  --color-marca-azul-500: #1080EE;
+  --color-marca-azul-600: #0D68C4;
+  --color-marca-azul-400: #3B9BFF;
+  --color-marca-azul-100: #DCEBFF;
+
+  /* Ciano/azul-claro (dos pontos luminosos do globo) -- brilhos, realces  */
+  /* subtis, elementos "tecnologicos" (ex.: ticker de idiomas).            */
+  --color-marca-ciano-400: #5AC8FA;
+
+  /* Fundo e texto */
+  --color-marca-fundo: #F6F9FF;
+  --color-marca-texto: #071A3D;
+  --color-marca-texto-suave: #4C5B7A;
+  --color-marca-linha: #DCE5F5;
+
+  /* Tipografia: serif de exibição (Fraunces) para titulos, sans tecnica    */
+  /* (IBM Plex Sans) para corpo, monospace (IBM Plex Mono) para dados.      */
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+body {
+  background-color: var(--color-marca-fundo);
+  color: var(--color-marca-texto);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-marca-azul-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Fundo em "malha de rede" subtil -- ecoa o globo conectado do logotipo,   */
+/* usado como pano de fundo decorativo em secoes escuras (Hero, CTA final). */
+.fundo-rede {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(90,200,250,0.10) 0, transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(16,128,238,0.16) 0, transparent 45%),
+    radial-gradient(circle at 60% 80%, rgba(90,200,250,0.08) 0, transparent 40%);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
+}
