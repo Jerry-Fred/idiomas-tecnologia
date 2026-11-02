@@ -23,8 +23,8 @@ export const config = {
 
   contactoPrincipal: {
     // IMPORTANTE: sem "+", sem espaços -- é o formato exigido pelo link wa.me
-    whatsapp: '244926186104',
-    whatsappExibicao: '+244 926 186 104',
+    whatsapp: '244953387201',
+    whatsappExibicao: '+244 953 387 201',
   },
 
   hero: {

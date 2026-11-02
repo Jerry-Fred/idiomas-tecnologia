@@ -22,13 +22,13 @@ src/
 ```
 
 **Porquê esta separação?** Para que a MANUTENÇÃO DO CONTEÚDO nunca exija tocar
-em código de interface. Praticamente tudo o que precisas de editar no dia-a-dia
+em código de interface. Praticamente tudo editável no dia-a-dia 
 (preços, textos, contacto, redes sociais) está em `src/data/` e `src/config/`,
 com comentários em português a explicar exactamente o que cada campo faz.
 
 ### Onde alterar cada coisa
 
-| Queres alterar...                         | Ficheiro                                  |
+| Se se Pretende alterar...                         | Ficheiro                                  |
 |--------------------------------------------|--------------------------------------------|
 | Nome da marca, lema, texto da Hero, número de WhatsApp | `src/config/site.ts`         |
 | Cursos, descrições, código de cada idioma  | `src/data/cursos.ts`                       |
@@ -99,7 +99,7 @@ recomendados quando esse momento chegar:
    componente de formulario e liga-o a uma API.
 2. **Variaveis de ambiente**: quando existir uma API real, usa ficheiros
    `.env` (o Vite le automaticamente variaveis prefixadas com `VITE_`, ex.:
-   `VITE_API_URL=https://api.idiomasetecnologia.co.ao`) -- nunca escrevas
+   `VITE_API_URL=https://api.idiomasetecnologia.co.ao`) -- nunca escrever
    URLs ou chaves sensiveis directamente no codigo.
 3. **Area do Aluno / autenticacao**: quando a conta de aluno for
    implementada, recomenda-se um fluxo de autenticacao com tokens (JWT) e

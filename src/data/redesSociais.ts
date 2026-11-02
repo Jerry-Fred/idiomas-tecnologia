@@ -19,8 +19,8 @@ export interface RedeSocial {
 }
 
 export const redesSociais: RedeSocial[] = [
-  { id: 'facebook', nome: 'Facebook', url: '#' },
-  { id: 'instagram', nome: 'Instagram', url: '#' },
+  { id: 'facebook', nome: 'Facebook', url: 'https://www.facebook.com/JeremiahTecnology' },
+  { id: 'instagram', nome: 'Instagram', url: 'https://www.instagram.com/idiomas.tecnologia?dlrf=ZG9qY3U5NTh2bHpo' },
   { id: 'tiktok', nome: 'TikTok', url: '#' },
   { id: 'youtube', nome: 'YouTube', url: '#' },
 ]
