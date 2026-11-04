@@ -1,4 +1,4 @@
-import { config } from '../config/site'
+import { } from '../config/site'
 
 /**
  * Gera um link "wa.me" que abre directamente uma conversa de WhatsApp com o
