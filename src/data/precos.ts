@@ -19,8 +19,8 @@ export interface PrecoModalidade {
 
 export const precosPorGrupo: Record<GrupoPreco, PrecoModalidade[]> = {
   padrao: [
-    { modalidade: 'Presencial', valor: 15000 },
-    { modalidade: 'Online', valor: 35000 },
+    { modalidade: 'Presencial', valor: 10000 },
+    { modalidade: 'Online', valor: 30000 },
     { modalidade: 'Ao Domicílio', valor: 45000 },
   ],
   premium: [
